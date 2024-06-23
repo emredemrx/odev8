@@ -41,6 +41,12 @@ public class Departman {
         return gorevler;
     }
 
+    public void yazdirPersonel (){
+        for (Personel personel : personeller) {
+            System.out.println(personel.getIsim());
+        }
+    }
+
 }
 
 
