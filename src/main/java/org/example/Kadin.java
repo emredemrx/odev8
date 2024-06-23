@@ -8,6 +8,6 @@ public class Kadin extends Personel{
     @Override
     public void yasHesapla() {
         int emeklilikyasinakalan = 60 - hesapla(dogumYili);
-        System.out.println(emeklilikyasinakalan);
+        System.out.println(getIsim() + " isimli personelin emekliliğe kalan yaşı : " + emeklilikyasinakalan);
     }
 }
