@@ -43,7 +43,7 @@ public class Departman {
 
     public void yazdirPersonel (){
         for (Personel personel : personeller) {
-            System.out.println(personel.getIsim());
+            System.out.println(personel.getIsim() + " " + personel.getSoyIsim() + " " + personel.getDogumYili());
         }
     }
 }
