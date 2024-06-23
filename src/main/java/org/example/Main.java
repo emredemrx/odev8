@@ -27,6 +27,5 @@ public class Main {
         personel3.yasHesapla();
         departman.personelEkleme(personel5);
         departman.yazdirPersonel();
-
     }
 }
