@@ -3,19 +3,23 @@ package org.example;
 import java.util.ArrayList;
 
 public class Departman {
-    private String isim;
+    private String departmanIsim;
     private Personel takimLideri;
     private ArrayList<Personel> personeller;
     private ArrayList<String> gorevler;
 
-    public Departman(String isim, Personel takimLideri) {
-        this.isim = isim;
+    public Departman(String departmanIsim, Personel takimLideri) {
+        this.departmanIsim = departmanIsim;
         this.takimLideri = takimLideri;
+        this.personeller = new ArrayList<>();
+        this.gorevler = new ArrayList<>();
     }
+
     public void liderDegistir (Personel lider){
         this.takimLideri= lider;
     }
     public void personelEkleme (Personel personel){
+        //System.out.println(personel.getIsim());
         this.personeller.add(personel);
     }
     public void personelCikarma (Personel personel){
@@ -25,9 +29,18 @@ public class Departman {
         int index = personeller.indexOf(degisecekPersonel);
         this.personeller.set(index, eklenecekPersonel);
     }
-    public void gorevEkleme (Personel personel){
-        this.personeller.remove(personel);
+    public void gorevEkleme(String gorev){
+        this.gorevler.add(gorev);
     }
+
+    public ArrayList<Personel> getPersoneller() {
+        return personeller;
+    }
+
+    public ArrayList<String> getGorevler() {
+        return gorevler;
+    }
+
 }
 
 

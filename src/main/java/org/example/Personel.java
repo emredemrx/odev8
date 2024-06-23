@@ -13,11 +13,23 @@ abstract class Personel {
         this.dogumYili = dogumYili;
     }
 
-    public abstract int yasHesapla();
+    public String getIsim() {
+        return isim;
+    }
+
+    public String getSoyIsim() {
+        return soyIsim;
+    }
+
+    public int getDogumYili() {
+        return dogumYili;
+    }
+
+    public abstract void yasHesapla();
+
     public int hesapla(int dogumYili) {
         int bulundugugumuzYil = 2024;
         int i = bulundugugumuzYil - dogumYili;
         return i;
     }
-
 }
