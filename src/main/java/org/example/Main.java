@@ -12,27 +12,20 @@ public class Main {
         Personel personel3 = new Erkek("cabbar", "CAN" , 1989);
         personel3.yasHesapla();
 
-
-        ArrayList<Personel> d;
         Departman departman = new Departman("IT", personel);
         departman.personelEkleme(personel1);
+
         departman.liderDegistir(personel1);
         departman.personelCikarma(personel);
         departman.personelDegistirme(personel3,personel1);
+
         departman.gorevEkleme("otomasyon Testi");
         departman.gorevEkleme("web testi");
-
         System.out.println(departman.getGorevler());
-        System.out.println(departman.getPersoneller());
 
-
-        /*ArrayList<Personel> myList = departman.getPersoneller();
-        System.out.println(departman);
-        for (Personel item : myList) {
-            System.out.println(item);
-        }*/
-        //for (departman1 : departman.getPersoneller();){
-        //    System.out.println(departman1);
-        //}
+        Personel personel5 = new Erkek("berk", "CAN" , 1989);
+        personel3.yasHesapla();
+        departman.personelEkleme(personel5);
+        departman.yazdirPersonel();
     }
 }
