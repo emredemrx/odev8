@@ -46,7 +46,6 @@ public class Departman {
             System.out.println(personel.getIsim());
         }
     }
-
 }
 
 
